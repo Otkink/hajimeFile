@@ -8,7 +8,7 @@ public class MottoRen {
     
 }
 
-class Bosque{
+class Mori{
     String msj;
     void Respirar(){
         

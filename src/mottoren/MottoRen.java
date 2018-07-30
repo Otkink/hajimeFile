@@ -9,5 +9,8 @@ public class MottoRen {
 }
 
 class Bosque{
-    
+    String msj;
+    void Respirar(){
+        
+    }
 }

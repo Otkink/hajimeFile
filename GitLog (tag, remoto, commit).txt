@@ -1,0 +1,355 @@
+kaze@Kaze-tsu MINGW64 ~
+$ cd Documents
+
+kaze@Kaze-tsu MINGW64 ~/Documents
+$ cd NetBeansProject
+bash: cd: NetBeansProject: No such file or directory
+
+kaze@Kaze-tsu MINGW64 ~/Documents
+$ cd NetBeansProject
+bash: cd: NetBeansProject: No such file or directory
+
+kaze@Kaze-tsu MINGW64 ~/Documents
+$ cd NetBeansProject
+bash: cd: NetBeansProject: No such file or directory
+
+kaze@Kaze-tsu MINGW64 ~/Documents
+$ cd NetBeansProjects
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects
+$ cd MottoRen
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (Rainoru)
+$ clear
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (Rainoru)
+$ git status
+On branch Rainoru
+Your branch is ahead of 'origin/Rainoru' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (Rainoru)
+$ git log --oneline
+844e31e (HEAD -> Rainoru, tag: v1.1) Merge branch 'master' into Rainor Adquiere el mensaje y nombre de metodo
+34e4bd1 (tag: v1.0, master) Muestra un dialogo
+9ffb112 (origin/master) Ni idea
+676a626 (origin/Rainoru) Cambie el nombre al metodo
+2d333c4 Pueba 2
+88f800e Prueba 1
+cf86329 Inicio del programa
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (Rainoru)
+$ git checkout cf86329
+Note: checking out 'cf86329'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at cf86329 Inicio del programa
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen ((cf86329...))
+$ git branch alterno
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen ((cf86329...))
+$ git checkout alterno
+Switched to branch 'alterno'
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (alterno)
+$ git add .
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (alterno)
+$ git commit -m "Esta es la linea de codigo alterno"
+[alterno ebc9000] Esta es la linea de codigo alterno
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (alterno)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ git log
+commit 34e4bd1eb96c8aa9f1c638dd01b3232667ffe901 (HEAD -> master, tag: v1.0)
+Author: Otnik <correo@ejemplo.com>
+Date:   Mon Jul 30 22:54:46 2018 -0500
+
+    Muestra un dialogo
+
+commit 9ffb112b52a6ea025edc253cefbc234dd9827500 (origin/master)
+Author: Otnik <correo@ejemplo.com>
+Date:   Mon Jul 30 22:16:40 2018 -0500
+
+    Ni idea
+
+commit 2d333c46edf64f8b6e3707f76fe1d19528fdccd3
+Author: Otnik <correo@ejemplo.com>
+Date:   Mon Jul 30 17:59:59 2018 -0500
+
+    Pueba 2
+
+commit 88f800e7f4e958fd3c31b7002d0874cc5c2a5475
+Author: Otnik <correo@ejemplo.com>
+Date:   Mon Jul 30 16:21:27 2018 -0500
+
+    Prueba 1
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ git log --oneline
+34e4bd1 (HEAD -> master, tag: v1.0) Muestra un dialogo
+9ffb112 (origin/master) Ni idea
+2d333c4 Pueba 2
+88f800e Prueba 1
+cf86329 Inicio del programa
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ git checkout alterno
+Switched to branch 'alterno'
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (alterno)
+$ git log --oneline
+ebc9000 (HEAD -> alterno) Esta es la linea de codigo alterno
+cf86329 Inicio del programa
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (alterno)
+$ git checkout cf86329
+Note: checking out 'cf86329'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at cf86329 Inicio del programa
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen ((cf86329...))
+$ git checkout ebc9000
+Previous HEAD position was cf86329 Inicio del programa
+HEAD is now at ebc9000 Esta es la linea de codigo alterno
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen ((ebc9000...))
+$ git checkout master
+Previous HEAD position was ebc9000 Esta es la linea de codigo alterno
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ git branch
+  Rainoru
+  alterno
+* master
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ git log --oneline
+34e4bd1 (HEAD -> master, tag: v1.0) Muestra un dialogo
+9ffb112 (origin/master) Ni idea
+2d333c4 Pueba 2
+88f800e Prueba 1
+cf86329 Inicio del programa
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ git reflog
+34e4bd1 (HEAD -> master, tag: v1.0) HEAD@{0}: checkout: moving from ebc9000de1740e0d64630563c65b0f1f3e2dbcb5 to master
+ebc9000 (alterno) HEAD@{1}: checkout: moving from cf86329b190500579beb8ad85e3eda277396ed3f to ebc9000
+cf86329 HEAD@{2}: checkout: moving from alterno to cf86329
+ebc9000 (alterno) HEAD@{3}: checkout: moving from master to alterno
+34e4bd1 (HEAD -> master, tag: v1.0) HEAD@{4}: checkout: moving from alterno to master
+ebc9000 (alterno) HEAD@{5}: commit: Esta es la linea de codigo alterno
+cf86329 HEAD@{6}: checkout: moving from cf86329b190500579beb8ad85e3eda277396ed3f to alterno
+cf86329 HEAD@{7}: checkout: moving from Rainoru to cf86329
+844e31e (tag: v1.1, Rainoru) HEAD@{8}: merge master: Merge made by the 'recursive' strategy.
+676a626 (origin/Rainoru) HEAD@{9}: checkout: moving from master to Rainoru
+34e4bd1 (HEAD -> master, tag: v1.0) HEAD@{10}: commit: Muestra un dialogo
+9ffb112 (origin/master) HEAD@{11}: commit: Ni idea
+2d333c4 HEAD@{12}: checkout: moving from Rainoru to master
+676a626 (origin/Rainoru) HEAD@{13}: commit: Cambie el nombre al metodo
+2d333c4 HEAD@{14}: checkout: moving from master to Rainoru
+2d333c4 HEAD@{15}: commit: Pueba 2
+88f800e HEAD@{16}: reset: moving to 88f800e7f4e958fd3c31b7002d0874cc5c2a5475
+88f800e HEAD@{17}: reset: moving to 88f800e7f4e958fd3c31b7002d0874cc5c2a5475
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ git checkout Rainoru
+Switched to branch 'Rainoru'
+Your branch is ahead of 'origin/Rainoru' by 3 commits.
+  (use "git push" to publish your local commits)
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (Rainoru)
+$ git show v1.1
+tag v1.1
+Tagger: Otnik <correo@ejemplo.com>
+Date:   Mon Jul 30 23:21:03 2018 -0500
+
+Version fusionada y ahora cuenta con nombre del metodo corregido y
+el JOptionPane
+
+commit 844e31eb02da12bf91fe5b77bc108704f673c1be (HEAD -> Rainoru, tag: v1.1)
+Merge: 676a626 34e4bd1
+Author: Otnik <correo@ejemplo.com>
+Date:   Mon Jul 30 23:13:01 2018 -0500
+
+    Merge branch 'master' into Rainor
+    Adquiere el mensaje y nombre de metodo
+
+diff --cc src/mottoren/MottoRen.java
+index 7360a3c,06a3f43..1a2b4fe
+--- a/src/mottoren/MottoRen.java
++++ b/src/mottoren/MottoRen.java
+@@@ -8,9 -10,9 +10,9 @@@ public class MottoRen
+
+  }
+
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (Rainoru)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ git log --oneline
+34e4bd1 (HEAD -> master, tag: v1.0) Muestra un dialogo
+9ffb112 (origin/master) Ni idea
+2d333c4 Pueba 2
+88f800e Prueba 1
+cf86329 Inicio del programa
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ git checkout 2d333c4
+Note: checking out '2d333c4'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 2d333c4 Pueba 2
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen ((2d333c4...))
+$ git checkout 34e4bd1
+Previous HEAD position was 2d333c4 Pueba 2
+HEAD is now at 34e4bd1 Muestra un dialogo
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen ((v1.0))
+$ git status
+HEAD detached at 34e4bd1
+nothing to commit, working tree clean
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen ((v1.0))
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ git tag
+v1.0
+v1.1
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ git push -u origin Rainoru
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (10/10), 921 bytes | 76.00 KiB/s, done.
+Total 10 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/Otkink/hajimeFile.git
+   676a626..844e31e  Rainoru -> Rainoru
+Branch 'Rainoru' set up to track remote branch 'Rainoru' from 'origin'.
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ ls
+build.xml  manifest.mf  nbproject/  src/  test/
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen (master)
+$ cd src
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen/src (master)
+$ ls
+mottoren/
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen/src (master)
+$ git branch --all
+  Rainoru
+  alterno
+* master
+  remotes/origin/Rainoru
+  remotes/origin/master
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen/src (master)
+$ git checkout remotes/origin/Rainoru
+Note: checking out 'remotes/origin/Rainoru'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 844e31e Merge branch 'master' into Rainor Adquiere el mensaje y nombre de metodo
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen/src ((v1.1))
+$ git log --oneline
+844e31e (HEAD, tag: v1.1, origin/Rainoru, Rainoru) Merge branch 'master' into Rainor Adquiere el mensaje y nombre de metodo
+34e4bd1 (tag: v1.0, master) Muestra un dialogo
+9ffb112 (origin/master) Ni idea
+676a626 Cambie el nombre al metodo
+2d333c4 Pueba 2
+88f800e Prueba 1
+cf86329 Inicio del programa
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen/src ((v1.1))
+$ git branch
+* (HEAD detached at origin/Rainoru)
+  Rainoru
+  alterno
+  master
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen/src ((v1.1))
+$ git branch --all
+* (HEAD detached at origin/Rainoru)
+  Rainoru
+  alterno
+  master
+  remotes/origin/Rainoru
+  remotes/origin/master
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen/src ((v1.1))
+$ git checkout master
+Previous HEAD position was 844e31e Merge branch 'master' into Rainor Adquiere el mensaje y nombre de metodo
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+kaze@Kaze-tsu MINGW64 ~/Documents/NetBeansProjects/MottoRen/src (master)
+$
